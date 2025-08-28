@@ -1,0 +1,7 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="app01.controller.dashboard"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:tnt="sap.tnt">
+    <Page id="page2" title="{i18n>title}">
+    `   <Text id="_IDGenText5" text="This is 2nd Page!"></Text>
+    </Page>
+</mvc:View>
