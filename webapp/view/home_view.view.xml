@@ -21,6 +21,8 @@
 
                 <Button id="_IDGenButton2" text="Login" type="Emphasized" press=".loginButton"></Button>
                 
+                <!-- <Button id="_IDGenButton3" text="Test" type="Emphasized" press="loginButton"></Button> -->
+                
             </form:SimpleForm>
         
         </VBox>
