@@ -4,7 +4,7 @@
 ---
 
 <p align="center">
-  <a href="https://tinyurl.com/demo-video" target="_blank">
+  <a href="OUTPUT/screen-recording-2025-08-29-180431_309Xdubc.mp4" target="_blank">
     <img src="https://img.shields.io/badge/ Demo Video-E74C3C?style=for-the-badge" />
   </a>
 </p>
