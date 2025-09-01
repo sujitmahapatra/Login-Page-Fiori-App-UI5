@@ -7,14 +7,6 @@
   <a href="https://tinyurl.com/demo-video" target="_blank">
     <img src="https://img.shields.io/badge/ Demo Video-E74C3C?style=for-the-badge" />
   </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://tinyurl.com/project-report" target="_blank">
-    <img src="https://img.shields.io/badge/ Project Report-3498DB?style=for-the-badge" />
-  </a>
-  &nbsp;&nbsp;&nbsp;
-  <a href="https://tinyurl.com/project-ppt" target="_blank">
-    <img src="https://img.shields.io/badge/ Project PPT-9B59B6?style=for-the-badge" />
-  </a>
 </p>
 
 ---
@@ -33,16 +25,16 @@ This SAP UI5 application provides a seamless experience for users to **log in**,
 ## 📸 Screenshots  
 
 <p align="center">
-  <img src="SCREENSHOTS/login.png" width="30%" />
-  <img src="SCREENSHOTS/registration.png" width="30%" />
-  <img src="SCREENSHOTS/dashboard.png" width="30%" />
+  <img src="OUTPUT/login" width="30%" />
+  <img src="OUTPUT/reg" width="30%" />
+  <img src="OUTPUT/main" width="30%" />
   <br>
   <b>1️⃣ Login Page</b> &nbsp;&nbsp;&nbsp; <b>2️⃣ Registration Page</b> &nbsp;&nbsp;&nbsp; <b>3️⃣ Dashboard Overview</b>  
   <br><br>
 
-  <img src="SCREENSHOTS/cards.png" width="30%" />
-  <img src="SCREENSHOTS/actions.png" width="30%" />
-  <img src="SCREENSHOTS/activity.png" width="30%" />
+  <img src="OUTPUT/Screenshot 2025-09-01 155705.png" width="30%" />
+  <img src="OUTPUT/Screenshot 2025-09-01 155726.png" width="30%" />
+  <img src="OUTPUT/Screenshot 2025-09-01 155848.png" width="30%" />
   <br>
   <b>4️⃣ Dashboard Cards</b> &nbsp;&nbsp;&nbsp; <b>5️⃣ Quick Actions</b> &nbsp;&nbsp;&nbsp; <b>6️⃣ Recent Activity</b>  
 </p>
