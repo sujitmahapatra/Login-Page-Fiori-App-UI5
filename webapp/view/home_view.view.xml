@@ -17,10 +17,9 @@
                 <Input id="input1" xmlns="sap.m" placeholder="Enter Your Name"></Input>
 
                 <Label id="_IDGenLabel1" text="Password :"></Label>
-                <Input id="Input2" type="Password" tooltip= "password field" xmlns="sap.m" placeholder="Enter Password"></Input>
+                <Input id="input2" type="Password" tooltip= "password field" xmlns="sap.m" placeholder="Enter Password"></Input>
 
-                <Button id="_IDGenButton2" text="Login" type="Emphasized" press=".loginButton"></Button>
-                
+                <Button id="_IDGenButton2" text="Login" type="Emphasized" press="loginButton"></Button>
             </form:SimpleForm>
 
             <HBox id="_IDGenHBox1" justifyContent="Center" class="sapUiSmallMarginTop">
