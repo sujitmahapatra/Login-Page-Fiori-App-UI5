@@ -1,0 +1,59 @@
+<mvc:View controllerName="app01.controller.registration"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    displayBlock="true">
+
+    <Page id="registrationPage" title="User Registration">
+    <Toolbar id="_IDGenToolbar10">
+    <Button id="_IDGenButton3" icon="sap-icon://nav-back" type="Transparent" press="onNavBackToHome" />
+        <Button id="_IDGenButton10" icon="sap-icon://menu2" type="Transparent"></Button>
+        
+
+        <ToolbarSpacer id="_IDGenToolbarSpacer10" />
+        <Text id="_IDGenText11" text="Register Page"></Text>
+        <ToolbarSpacer id="_IDGenToolbarSpacer11" />
+        <Button id="_IDGenButton11" text="Hi! User" type="Transparent"></Button>
+    </Toolbar>
+        <content>
+            <VBox id="_IDGenVBox" class="registrationContainer sapUiSmallMargin">
+                <form:SimpleForm
+                    id="registrationForm"
+                    title="Register New User"
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    class="customRegistrationForm">
+
+                    <Label id="_IDGenLabel2" text="Full Name" />
+                    <Input id="fullName" placeholder="Enter your full name" />
+
+                    <Label id="_IDGenLabel3" text="Email" />
+                    <Input id="email" placeholder="Enter your email" type="Email" />
+
+                    <Label id="_IDGenLabel4" text="Username" />
+                    <Input id="username" placeholder="Choose a username" />
+
+                    <Label id="_IDGenLabel5" text="Password" />
+                    <Input id="password" placeholder="Enter password" type="Password" />
+
+                    <!-- <Label id="_IDGenLabel6" text="Confirm Password" />
+                    <Input id="confirmPassword" placeholder="Re-enter password" type="Password" /> -->
+                    
+                    <Button id="_IDGenButton5" text="Register" type="Emphasized" press="onRegister" />
+                </form:SimpleForm>
+            </VBox>
+        </content>
+
+
+    <footer>
+    <Bar id="_IDGenBar11" >
+        <contentMiddle>
+            <Text id="_IDGenText111" text="Developed by @ Sujit Mahapatra"></Text>
+        </contentMiddle>
+        <contentRight>
+            <Text id="_IDGenText21" text="All Copyright Reserved"></Text>
+        </contentRight>
+    </Bar>
+    </footer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,42 @@
+<mvc:View controllerName="app01.controller.home_view"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:tnt="sap.tnt">
+    <Page id="page" title="{i18n>title}">
+    <Toolbar id="_IDGenToolbar">
+        <Button id="_IDGenButton" icon="sap-icon://menu2" type="Transparent"></Button>
+        <ToolbarSpacer id="_IDGenToolbarSpacer" />
+        <Text id="_IDGenText" text="Login Page"></Text>
+        <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+        <Button id="_IDGenButton1" text="Hi! Admin" type="Transparent"></Button>
+    </Toolbar>
+    <content>
+        <VBox id="_IDGenVBox1" fitContainer="true" class="custform">
+            <form:SimpleForm id="_IDGenSimpleForm" title="Login" editable="true" layout="ResponsiveGridLayout"
+            xmlns:form="sap.ui.layout.form">
+                <Label id="_IDGenLabel" text="Username :"></Label>
+                <Input id="input1" xmlns="sap.m" placeholder="Enter Your Name"></Input>
+
+                <Label id="_IDGenLabel1" text="Password :"></Label>
+                <Input id="input2" type="Password" tooltip= "password field" xmlns="sap.m" placeholder="Enter Password"></Input>
+
+                <Button id="_IDGenButton2" text="Login" type="Emphasized" press="loginButton"></Button>
+            </form:SimpleForm>
+
+            <HBox id="_IDGenHBox1" justifyContent="Center" class="sapUiSmallMarginTop">
+    <Link id="_IDGenLink" text="New user? Click to Register" press="onRegisterLinkPress" />
+</HBox>
+        
+        </VBox>
+    </content>
+    <footer>
+    <Bar id="_IDGenBar1" >
+        <contentMiddle>
+            <Text id="_IDGenText1" text="Developed by @ Sujit Mahapatra"></Text>
+        </contentMiddle>
+        <contentRight>
+            <Text id="_IDGenText2" text="All Copyright Reserved"></Text>
+        </contentRight>
+    </Bar>
+    </footer>
+    </Page>
+</mvc:View>

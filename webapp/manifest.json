@@ -1,0 +1,119 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "app01",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.18.5",
+      "toolsId": "caded83a-d4be-4c82-b112-7ab7534b4a3a"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.139.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "app01.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "app01.view",
+        "async": true
+      },
+      "routes": [
+        {
+          "name": "home_view",
+          "pattern": ":?query:",
+          "target": [
+            "Targethome_view"
+          ]
+        },
+        {
+          "name": "dashboard",
+          "pattern": "list/{name}/{pass}",
+          "target": [
+            "Targetdashboard"
+          ]
+        },
+        {
+          "name": "registration",
+          "pattern": "registration",
+          "target": [
+            "Targetregistration"
+          ]
+        }
+      ],
+      "targets": {
+        "Targethome_view": {
+          "id": "home_view",
+          "name": "home_view"
+        },
+        "Targetdashboard": {
+          "id": "dashboard",
+          "name": "dashboard"
+        },
+        "Targetregistration": {
+          "id": "registration",
+          "name": "registration"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "app01.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

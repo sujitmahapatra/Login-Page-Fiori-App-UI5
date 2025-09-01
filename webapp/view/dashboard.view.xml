@@ -1,0 +1,57 @@
+<mvc:View controllerName="app01.controller.dashboard"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    displayBlock="true">
+
+    <Page id="dashboardPage" title="">
+        <headerContent>
+            <Button id="_IDGenButton4" icon="sap-icon://nav-back" type="Transparent" press="onNavBackToHome" />
+            <Text id="_IDGenText5" text="Dashboard"></Text>
+        </headerContent>
+
+        <content>
+            <VBox id="_IDGenVBox2" class="dashboardContainer">
+                <Title id="_IDGenTitle" text="Welcome, Sujit!" level="H1" />
+                <Text id="_IDGenText3" text="Here is your activity overview and quick actions." />
+
+                <!-- Dashboard Cards -->
+                <HBox id="_IDGenHBox" justifyContent="SpaceAround" class="sapUiSmallMargin">
+                    <VBox id="_IDGenVBox3" class="dashboardCard feedbackCard">
+                        <ObjectStatus id="_IDGenObjectStatus" title="Feedback Received" text="24" state="Success" />
+                    </VBox>
+                    <VBox id="_IDGenVBox4" class="dashboardCard pendingCard">
+                        <ObjectStatus id="_IDGenObjectStatus1" title="Pending Reviews" text="5" state="Warning" />
+                    </VBox>
+                    <VBox id="_IDGenVBox5" class="dashboardCard resolvedCard">
+                        <ObjectStatus id="_IDGenObjectStatus2" title="Resolved Issues" text="12" state="Information" />
+                    </VBox>
+                </HBox>
+
+                <!-- Quick Actions -->
+                <Panel id="_IDGenPanel1" headerText="Quick Actions">
+                    <HBox id="_IDGenHBox3" justifyContent="SpaceAround">
+                        <Button id="_IDGenButton6" text="Submit Feedback" icon="sap-icon://edit" press="onSubmitFeedback" />
+                        <Button id="_IDGenButton7" text="View Reports" icon="sap-icon://document" press="onViewReports" />
+                        <Button id="_IDGenButton8" text="Settings" icon="sap-icon://action-settings" press="onOpenSettings" />
+                    </HBox>
+                </Panel>
+
+                <!-- Recent Activity -->
+                <Panel id="_IDGenPanel2" headerText="Recent Activity">
+                    <List id="_IDGenList" items="{/recentActivities}">
+                        <StandardListItem id="_IDGenStandardListItem" title="{title}" description="{description}" icon="sap-icon://activity-items" />
+                    </List>
+                </Panel>
+            </VBox>
+        </content>
+
+        <footer>
+            <Bar id="_IDGenBar2">
+                <contentMiddle>
+                    <Text id="_IDGenText4" text="© Sujit Mahapatra | Dashboard" />
+                </contentMiddle>
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>
